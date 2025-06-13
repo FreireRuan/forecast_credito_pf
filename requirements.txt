@@ -1,0 +1,10 @@
+boto3
+pyathena
+pandas
+numpy
+matplotlib
+seaborn
+plotly
+tqdm
+prophet
+dotenv
