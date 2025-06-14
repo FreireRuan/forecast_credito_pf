@@ -1,0 +1,59 @@
+{
+    "delimiter": ",",
+    "escape": "\"",
+    "quote": "\"",
+    "fields": [
+        {
+            "name": "data",
+            "type": "string"
+        },
+        {
+            "name": "financiadoras",
+            "type": "string"
+        },
+        {
+            "name": "vlr_total",
+            "type": "string"
+        },
+        {
+            "name": "year",
+            "type": "string"
+        },
+        {
+            "name": "month",
+            "type": "string"
+        },
+        {
+            "name": "day_of_year",
+            "type": "string"
+        },
+        {
+            "name": "quarter_year",
+            "type": "string"
+        },
+        {
+            "name": "yhat",
+            "type": "string"
+        },
+        {
+            "name": "yhat_lower",
+            "type": "string"
+        },
+        {
+            "name": "yhat_upper",
+            "type": "string"
+        },
+        {
+            "name": "anual_seasonality",
+            "type": "string"
+        },
+        {
+            "name": "quarter_seasonality",
+            "type": "string"
+        },
+        {
+            "name": "meta_anual",
+            "type": "string"
+        }
+    ]
+}
