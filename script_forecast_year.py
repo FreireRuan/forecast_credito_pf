@@ -11,10 +11,10 @@ from datetime import datetime, timezone
 from prophet import Prophet
 from pyathena import connect
 from pyathena.pandas.util import as_pandas
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
-# credencias oracle e slack
-load_dotenv('C:/Users/ruan.morais/Desktop/sandbox_freire/forecast_credito_pf_teste/credencials.env') 
+# # credencias oracle e slack
+# load_dotenv('C:/Users/ruan.morais/Desktop/sandbox_freire/forecast_credito_pf/credencials.env') 
 
 # ================================
 # Variáveis de ambiente (GitHub Secrets)
@@ -174,8 +174,8 @@ if __name__ == "__main__":
 
         s3_client = get_s3_client()
         s3_client.put_object(
-            Bucket='todos-data-lake-sandbox',
-            Key='source=dbt/database=pdgt_sandbox_ruanmorais/forecast_credito/forecast_credito.csv',
+            Bucket='todos-data-lake-external-source',
+            Key='source=csv/database=business-analytics/forecast_credito_pf/forecast_credito.csv',
             Body=csv_buffer.getvalue(),
             ContentType='text/csv'
         )
